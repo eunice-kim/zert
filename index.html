@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>The Joke</title>
+  </head>
+  <body>
+    <div id="background" style="width:100vw;height:100vh;margin:-8px;font-family:Times,serif">
+
+      <h1 id="postcard" style="color:#000000;font-style:italic;transform:rotate(-10deg);background-color:#F2EEE4;padding:15px;padding-top:20px;padding-bottom:20px;width:600px;position:fixed;border:none"><span id="optimism">Optimism</span> is the <span id="opium">opium</span> of the <span id="people">people!</span><br>A healthy atmosphere stinks of stupidity!<br><span id="trotsky">Long Live Trotsky!</h1>
+
+      <div style="position:absolute;width:100%;height:100vh">
+        <img src="Images/Trotsky.png" id="trotsky-image" style="display:none;position:absolute;transform:translate(-50%, -50%);top:50%;left:50%" width="300px">
+        <img src="Images/Optimism.jpeg" id="optimism-image" style="display:none;position:absolute;transform:translate(-50%, -50%);top:50%;left:50%" width="300px">
+        <img src="Images/Opium.jpeg" id="opium-image" style="display:none;position:absolute;transform:translate(-50%, -50%);top:50%;left:50%" width="300px">
+        <img src="Images/People.jpeg" id="people-image" style="display:none;position:absolute;transform:translate(-50%, -50%);top:50%;left:50%" width="300px">
+      </div>
+
+      <div style="position:absolute;width:100%;height:100vh;pointer-events:none;overflow:hidden">
+        <img id="kundera-image" src="Images/Kundera.jpeg" width="100%" style="display:none">
+        <img id="ludvik-image" src="Images/Ludvik.jpeg" width="100%" style="display:none">
+        <img id="helena-image" src="Images/Helena.jpeg" width="100%" style="display:none">
+        <img id="kostka-image" src="Images/Kostka.png" width="100%" style="display:none">
+        <img id="jaroslav-image" src="Images/Jaroslav.png" width="100%" style="display:none">
+      </div>
+
+      <div id="book-description" style="position:fixed;left:0;font-style:italic;font-weight:bold;font-size:4.7vw;line-height:88px;color:#0000FF;text-align:justify;text-align-last:justify" height="100%" width="100%">The Joke <a href="https://en.wikipedia.org/wiki/The_Joke_(novel)" target="_blank" class="name" onmouseover="showKundera()" onmouseout="hideKundera()" style="cursor:text">Žert</a> (1967) by Milan Kundera describes how a student's private joke derails his life and tells the stories of his relations grappling with the shifting roles of folk traditions and religion under Communist Czechoslovakia. The novel is told from four perspectives—the joker <span class="name" onmouseover="showLudvikImage()" onmouseout="hideLudvikImage()" onclick="startLudvik()">Ludvik</span>, his victim <span class="name" onmouseover="showHelenaImage()" onmouseout="hideHelenaImage()" onclick="startHelena()">Helena</span>, devout Christian <span class="name" onmouseover="showKostkaImage()" onmouseout="hideKostkaImage()" onclick="showKostka()">Kostka</span>, and Moravian patriot and cimbalom band member <span class="name" onmouseover="showJaroslavImage()" onmouseout="hideJaroslavImage()" onclick="showJaroslav()">Jaroslav</span>.</div>
+
+      <div id="ludvik" style="top:100vh;position:fixed;left:0;font-style:italic;font-weight:bold;font-size:63px;opacity:0.5;color:#006400;text-align:justify;pointer-events:none" height="100%" width="100%">Many times in recent years women of all kinds have reproached me (because I was unable to reciprocate their feelings) with being conceited. This is nonsense, I'm not in the least conceited, but to be frank, it does pain me to think that not since reaching maturity have I been able to establish a true relationship with a woman, that I have never, as they say, beein in love with a woman. I'm not sure I know the reasons for this failure, whether they lie in some innate emotional defiiency or in my life history; I don't mean to sound pompous, but the truth remains: the image of that lecture hall with a hundred people raising their hands, giving the order to destroy my life, comes back to me again and again. Those hundred people had no idea that things would one day being to change, they counted on my being an outcast for life. Not out of a desire for martyrdom but rather out of the malicious obstinacy characteristic of reflection, I have often composed imaginary variations; I have imagined, for example, what it would have been like if instead of expulsion from the Party the verdict had been hanging by the neck. No matter how I construe it, I can't see them doing anything but raising their hands again, especially if the utility of my hanging had been movingly argued in the opening address. Since then, whenever I make new acquaintances, men or women with the potential of becoming friends or lovers, I project them back into that time, that hall, and ask myself whether they would have raised their hands; no one has ever passed the test: every one of them has raised his hand in the same way my former friends and colleagues (willingly or not, out of conviction or fear) raised theirs.</div>
+
+      <div id="helena-left" style="position:fixed;left:100vw;font-size:50px;transform:translateY(-22px);width:310vw;line-height:90px;opacity:0.5;color:#000000;text-align-last:justify;pointer-events:none" height="100%">It's only the Party that's never done me any harm, and I've never It's only the Party that's never done me any harm, and I've never It's only the Party that's never done me any harm, and I've never<br>to desert it, in fifty-six when there was all that talk about Stalin's to desert it, in fifty-six when there was all that talk about Stalin's to desert it, in fifty-six when there was all that talk about Stalin's<br>our papers were a pack of lies, nationalized stores didn't work, culture our papers were a pack of lies, nationalized stores didn't work, culture our papers were a pack of lies, nationalized stores didn't work, culture<br>Union had no freedom, and the worst part of it all was that even Union had no freedom, and the worst part of it all was that even Union had no freedom, and the worst part of it all was that even<br>Pavel too, and again they all applauded him. Luckily the Party gave the Pavel too, and again they all applauded him. Luckily the Party gave the Pavel too, and again they all applauded him. Luckily the Party gave the<br>Pavel calmed down too, he didn't want to risk his cushy lectureship in Pavel calmed down too, he didn't want to risk his cushy lectureship in Pavel calmed down too, he didn't want to risk his cushy lectureship in<br>apathy, mistrust, misgiving, a germ that reproduced in silence, in secret, apathy, mistrust, misgiving, a germ that reproduced in silence, in secret, apathy, mistrust, misgiving, a germ that reproduced in silence, in secret,<br>than ever, the Party is almost like a living being, I can tell it all my than ever, the Party is almost like a living being, I can tell it all my than ever, the Party is almost like a living being, I can tell it all my</div>
+
+      <div id="helena-right" style="position:fixed;left:-310vw;font-size:50px;transform:translateY(22px);width:310vw;line-height:90px;opacity:0.5;color:#000000;text-align-last:justify;pointer-events:none" height="100%">harmed the Party, not even in the days when almost everyone was ready harmed the Party, not even in the days when almost everyone was ready harmed the Party, not even in the days when almost everyone was ready<br>crimes, and people went wild and began rejecting everything, saying crimes, and people went wild and began rejecting everything, saying crimes, and people went wild and began rejecting everything, saying<br>was in decline, farms should never have been collectivized, the Soviet was in decline, farms should never have been collectivized, the Soviet was in decline, farms should never have been collectivized, the Soviet<br>Communists went around talking like that, and at their own meetings, Communists went around talking like that, and at their own meetings, Communists went around talking like that, and at their own meetings,<br>squawkers a good rap on the knuckles, and when they calmed down squawkers a good rap on the knuckles, and when they calmed down squawkers a good rap on the knuckles, and when they calmed down<br>Marxism at the university, but something did remain behind, a germ of Marxism at the university, but something did remain behind, a germ of Marxism at the university, but something did remain behind, a germ of<br>I didn't know how to counter it, I just clung to the Party more tightly I didn't know how to counter it, I just clung to the Party more tightly I didn't know how to counter it, I just clung to the Party more tightly<br>most intimate thoughts now that I have nothing to say to Pavel, or most intimate thoughts now that I have nothing to say to Pavel, or most intimate thoughts now that I have nothing to say to Pavel, or</div>
+
+      <div id="kostka" style="width:1000px;display:none;text-align:center;position:absolute;top:40%;left:50%;transform:translateX(-50%);color:white;font-size:40px;">Because to live in a world in which no one is forgiven, where all are irredeemable, is the same as living in <span id="hell">hell</span>.</div>
+
+      <div id="jaroslav" style="display:none;position:absolute:top:0;left:0;width:100vw;height:100vh;background-color:transparent">
+        <img src="Images/cimbalom.png" id="cimbalom" class="rotateRight" width="300px" style="margin-left:70%;margin-top:5%;position:absolute">
+        <img src="Images/SheetMusic.jpeg" id="sheetMusic" class="rotateRight" width="300px" style="margin-left:15%;margin-top:30%;position:absolute">
+        <img src="Images/FolkMusic.jpeg" id="folkMusic" class="rotateLeft" width="180px" style="margin-left:40%;position:absolute;border-radius:50%">
+        <div style="font-weight:bold;font-style:italic;font-size:30px;transform-origin:center center;position:absolute;margin-top:20%;margin-left:10%" class="rotateLeft" id="songs">Our songs are sung in modes that court orchestras never dreamed of!</div>
+        <div style="font-weight:bold;text-transform:uppercase;font-size:30px;position:absolute;margin-top:30%;margin-left:50%;transform:rotate(180deg);color:#000000;text-shadow: 1px 1px #FFFF00;" class="blink" id="blinkingText">The year was 1948.<br>Everything was upside-down.</div>
+      </div>
+
+      <div id="optimism-hover" style="width:128px;height:23px;position:fixed;top:0;transform:rotate(-10deg);margin-left:12px;margin-top:90px"></div>
+      <div id="opium-hover" style="width:82px;height:16px;position:fixed;top:0;transform:rotate(-10deg);margin-left:225px;margin-top:63px;"></div>
+      <div id="people-hover" style="width:84px;height:16px;position:fixed;top:0;transform:rotate(-10deg);margin-left:398px;margin-top:33px"></div>
+      <div id="stupidity-hover" style="width:112px;height:16px;position:fixed;top:0;transform:rotate(-10deg);margin-left:427px;margin-top:63px"></div>
+      <div id="trotsky-hover" style="width:255px;height:23px;position:fixed;top:0;transform:rotate(-10deg);margin-left:22px;margin-top:152px"></div>
+      <div id="kostka-hover" style="display:none;width:1000px;height:80px;position:fixed;top:41%;left:50%;transform:translateX(-50%)">
+        <div id="hell-hover" style="width:58px;height:28px;position:fixed;top:47px;left:822px"></div>
+      </div>
+      <div id="jaroslav-end" onclick="hideJaroslav()" style="display:none;width:180px;height:180px;border-radius:50%;margin-left:40%;position:absolute;"></div>
+
+    </div>
+
+    <style>
+
+    .name {
+      color:#FF0000;
+    }
+
+    a {
+      text-decoration:none;
+    }
+
+    a:hover {
+      text-decoration:underline;
+    }
+
+    .name:hover {
+      color:#FFFF00;
+      text-decoration:underline;
+    }
+
+    .character {
+      position:relative;
+      margin:0 50px;
+      display:inline-block;
+      top:50%;
+      transform:translateY(-50%);
+    }
+
+    .animateLudvik {
+      animation:animateUpLudvik 40s;
+      animation-timing-function: linear;
+    }
+
+    .animateHelenaLeft {
+      animation:animateLeftHelena 40s;
+      animation-timing-function: linear;
+    }
+
+    .animateHelenaRight {
+      animation:animateRightHelena 40s linear;
+    }
+
+    .rotateRight {
+    animation: rotationRight 10s infinite linear;
+    }
+
+    .rotateLeft {
+    animation: rotationLeft 15s infinite linear;
+    }
+
+    .blink {
+      animation:blinking 1s steps(2, start) infinite;
+    }
+
+    @keyframes animateUpLudvik {
+      0% {
+        top:100vh;
+      }
+      100% {
+        top:-340vh;
+      }
+    }
+
+    @keyframes animateLeftHelena {
+      0% {
+        left:100vw;
+      }
+      100% {
+        left:-310vw;
+      }
+    }
+
+    @keyframes animateRightHelena {
+      0% {
+        left:-310vw;
+      }
+      100% {
+        left:100vw;
+      }
+    }
+
+    @keyframes rotationRight {
+      0% {
+        transform:rotate(0deg);
+      }
+
+      100% {
+        transform:rotate(359deg);
+      }
+    }
+
+    @keyframes rotationLeft {
+      0% {
+        transform:rotate(359deg);
+      }
+
+      100% {
+        transform:rotate(0deg);
+      }
+    }
+
+    @keyframes blinking {
+      100% {
+        visibility:hidden;
+      }
+    }
+
+    </style>
+
+    <script>
+
+    // variable declarations
+    var trotskyImage = document.getElementById('trotsky-image');
+    var trotsky = document.getElementById('trotsky');
+    var optimismImage = document.getElementById('optimism-image');
+    var optimism = document.getElementById('optimism');
+    var opiumImage = document.getElementById('opium-image');
+    var opium = document.getElementById('opium');
+    var peopleImage = document.getElementById('people-image');
+    var people = document.getElementById('people');
+    var kundera = document.getElementById("kundera-image");
+    var ludvikImage = document.getElementById("ludvik-image");
+    var helenaImage = document.getElementById("helena-image");
+    var kostkaImage = document.getElementById("kostka-image");
+    var jaroslavImage = document.getElementById("jaroslav-image");
+    var bookDescription = document.getElementById("book-description");
+    var ludvik = document.getElementById("ludvik");
+    var helenaLeft = document.getElementById("helena-left");
+    var helenaRight = document.getElementById("helena-right");
+    var postcard = document.getElementById("postcard");
+    var kostka = document.getElementById("kostka");
+    var trotskyHover = document.getElementById("trotsky-hover");
+    var optimismHover = document.getElementById("optimism-hover");
+    var opiumHover = document.getElementById("opium-hover");
+    var peopleHover = document.getElementById("people-hover");
+    var stupidityHover = document.getElementById("stupidity-hover");
+    var kostkaHover = document.getElementById("kostka-hover");
+    var hellHover = document.getElementById("hell-hover");
+    var jaroslav = document.getElementById("jaroslav");
+    var jaroslavEnd = document.getElementById("jaroslav-end");
+
+    // display or hide images on hover
+    trotskyHover.onmouseover = function() {showTrotsky()};
+    trotskyHover.onmouseout = function() {hideTrotsky()};
+    trotskyHover.onclick = function() {showHideDescription()};
+    optimismHover.onmouseover = function() {showOptimism()};
+    optimismHover.onmouseout = function() {hideOptimism()};
+    opiumHover.onmouseover = function() {showOpium()};
+    opiumHover.onmouseout = function() {hideOpium()};
+    peopleHover.onmouseover = function() {showPeople()};
+    peopleHover.onmouseout = function() {hidePeople()};
+    stupidityHover.onmouseover = function() {changeAnimation()};
+    stupidityHover.onmouseout = function() {revertAnimation()};
+    kostkaHover.onmouseover = function() {showKostkaText()};
+    kostkaHover.onmouseout = function() {hideKostkaText()};
+    hellHover.onmouseover = function() {hellMouseOn()};
+    hellHover.onmouseout = function() {hellMouseOff()};
+    hellHover.onclick = function() {hideKostka()};
+
+    function showHideDescription() {
+      if (bookDescription.style.display=="inline") {
+        bookDescription.style.display="none";
+      }
+      else { bookDescription.style.display="inline"; }
+    }
+
+    function showTrotsky() {
+      trotskyImage.style.display="inline";
+      trotsky.style="text-decoration:underline;color:#006400";
+    }
+    function hideTrotsky() {
+      trotskyImage.style.display="none";
+      trotsky.style="";
+    }
+
+    function showOptimism() {
+      optimismImage.style.display="inline";
+      optimism.style="color:red";
+    }
+    function hideOptimism() {
+      optimismImage.style.display="none";
+      optimism.style="";
+    }
+
+    function showOpium() {
+      opiumImage.style.display="inline";
+      opium.style="color:red";
+    }
+    function hideOpium() {
+      opiumImage.style.display="none";
+      opium.style="";
+    }
+
+    function showPeople() {
+      peopleImage.style.display="inline";
+      people.style="color:red";
+    }
+    function hidePeople() {
+      peopleImage.style.display="none";
+      people.style="";
+    }
+
+    function showKundera() {
+      kundera.style.display="inline";
+    }
+    function hideKundera() {
+      kundera.style.display="none";
+    }
+
+    function showLudvikImage() {
+      ludvikImage.style.display="inline";
+    }
+    function hideLudvikImage() {
+      ludvikImage.style.display="none";
+    }
+
+    function showHelenaImage() {
+      helenaImage.style.display="inline";
+    }
+    function hideHelenaImage() {
+      helenaImage.style.display="none";
+    }
+
+    function showKostkaImage() {
+      kostkaImage.style.display="inline";
+    }
+    function hideKostkaImage() {
+      kostkaImage.style.display="none";
+    }
+
+    function showJaroslavImage() {
+      jaroslavImage.style.display="inline";
+    }
+    function hideJaroslavImage() {
+      jaroslavImage.style.display="none";
+    }
+
+    function changeAnimation() {
+      ludvik.style.color="#7B3F00";
+      helenaLeft.style.textTransform="uppercase";
+      helenaLeft.style.fontSize="35px";
+      helenaRight.style.textTransform="uppercase";
+      helenaRight.style.fontSize="35px";
+    }
+    function revertAnimation() {
+      ludvik.style.color="#006400";
+      helenaLeft.style.textTransform="none";
+      helenaRight.style.textTransform="none";
+    }
+
+    function startLudvik() {
+      bookDescription.style.display="none";
+      ludvik.className = "animateLudvik";
+      ludvik.addEventListener('animationend', () => ludvik.classList.remove('animateLudvik') );
+    }
+
+    function startHelena() {
+      bookDescription.style.display="none";
+      helenaLeft.className = "animateHelenaLeft";
+      helenaRight.className = "animateHelenaRight";
+      helenaLeft.addEventListener('animationend', () => helenaLeft.classList.remove('animateHelenaLeft') );
+      helenaRight.addEventListener('animationend', () => helenaRight.classList.remove('animateHelenaRight') );
+    }
+
+    function showKostka() {
+      bookDescription.style.display="none";
+      kostkaHover.style.display="inline";
+      document.getElementById("background").style.backgroundColor="#000000";
+      document.getElementById("cimbalom").style.filter="invert(1)";
+      document.getElementById("sheetMusic").style.filter="invert(1)";
+      document.getElementById("folkMusic").style.filter="invert(1)";
+      document.getElementById("blinkingText").style.color="#FFFF00";
+      document.getElementById("blinkingText").style.textShadow="0px 0px";
+      document.getElementById("songs").style.color="#FFFFFF";
+      postcard.style.backgroundColor="#000000";
+      postcard.style.color="#FFFFFF";
+      helenaLeft.style.color="#FCEDF4";
+      helenaRight.style.color="#FCEDF4";
+    }
+
+    function hideKostka() {
+      bookDescription.style.display="inline";
+      kostkaHover.style.display="none";
+      document.getElementById("background").style.backgroundColor="transparent";
+      postcard.style.backgroundColor="#F2EEE4";
+      document.getElementById("cimbalom").style.filter="invert(0)";
+      document.getElementById("sheetMusic").style.filter="invert(0)";
+      document.getElementById("folkMusic").style.filter="invert(0)";
+      document.getElementById("blinkingText").style.color="#000000";
+      document.getElementById("blinkingText").style.textShadow="1px 1px #FFFF00";
+      document.getElementById("songs").style.color="#000000";
+      postcard.style.color="#000000";
+      helenaLeft.style.color="#000000";
+      helenaRight.style.color="#000000";
+    }
+
+    function showKostkaText() {
+      kostka.style.display="inline";
+    }
+
+    function hideKostkaText() {
+      kostka.style.display="none";
+    }
+
+    function hellMouseOn() {
+      document.getElementById("hell").style.color="#FF0000";
+    }
+
+    function hellMouseOff() {
+      document.getElementById("hell").style.color="#FFFFFF";
+    }
+
+    function showJaroslav() {
+      jaroslavEnd.style.display="inline";
+      bookDescription.style.display="none";
+      jaroslav.style.display="inline";
+    }
+
+    function hideJaroslav() {
+      jaroslavEnd.style.display="none";
+      bookDescription.style.display="inline";
+      jaroslav.style.display="none";
+    }
+
+    </script>
+  </body>
+</html>
